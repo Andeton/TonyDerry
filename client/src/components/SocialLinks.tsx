@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import { SiKofi, SiLinkedin, SiFacebook } from "react-icons/si";
+import { SiKofi, SiLinkedin, SiFacebook, SiInstagram } from "react-icons/si";
 
 export default function SocialLinks() {
   const links = [
@@ -20,6 +20,12 @@ export default function SocialLinks() {
       description: "Community updates",
       url: "https://www.facebook.com/TonyDerryPro",
       icon: SiFacebook
+    },
+    {
+      name: "Instagram",
+      description: "AI visuals & updates",
+      url: "https://www.instagram.com/ai_tony_derry/",
+      icon: SiInstagram
     }
   ];
 
