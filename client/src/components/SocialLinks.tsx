@@ -12,13 +12,13 @@ export default function SocialLinks() {
     {
       name: "LinkedIn",
       description: "Connect professionally",
-      url: "#",
+      url: "https://www.linkedin.com/in/ai-gen-td/",
       icon: SiLinkedin
     },
     {
       name: "Facebook",
       description: "Community updates",
-      url: "#",
+      url: "https://www.facebook.com/TonyDerryPro",
       icon: SiFacebook
     }
   ];
