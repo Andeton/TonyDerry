@@ -20,6 +20,22 @@ git push -u origin feature/codex-update
 
 Далее откройте Pull Request в ветку `main` через GitHub UI. После слияния Vercel автоматически подтянет изменения и выполнит деплой.
 
+### Проверка удалённого репозитория
+
+Перед пушем убедитесь, что настроен правильный origin:
+
+```bash
+git remote -v
+```
+
+Если origin отсутствует или отличается от `https://github.com/Andeton/TonyDerry.git`, обновите его:
+
+```bash
+git remote set-url origin https://github.com/Andeton/TonyDerry.git
+```
+
+Только после этого повторите команды `git push` из инструкции выше.
+
 ## Общие подсказки
 
 Если вы работаете над другим набором правок, последовательность остаётся похожей:
