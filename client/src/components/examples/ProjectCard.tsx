@@ -6,9 +6,13 @@ export default function ProjectCardExample() {
     <div className="p-8 max-w-sm">
       <ProjectCard
         icon={Cog}
-        title="n8n Workflows"
-        subtitle="Automation pipelines for AI experiments."
-        description="I design and share n8n workflows that connect GPTs, image/video generators, and external tools into one seamless automation system."
+        title="Education Platform"
+        tag="Education"
+        details={[
+          { label: "Stack", value: "OpenAI o1 + RAG + Notion AI" },
+          { label: "Compliance", value: "EU AI Act–ready" },
+          { label: "Business lift", value: "+58% MQL-to-demo conversions" },
+        ]}
       />
     </div>
   );
