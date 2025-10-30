@@ -6,7 +6,6 @@ import Process from "@/components/Process";
 import Testimonials from "@/components/Testimonials";
 import SocialLinks from "@/components/SocialLinks";
 import Footer from "@/components/Footer";
-import CallToAction from "@/components/CallToAction";
 
 export default function Home() {
   return (
@@ -18,7 +17,6 @@ export default function Home() {
       <Process />
       <Testimonials />
       <SocialLinks />
-      <CallToAction />
       <Footer />
     </div>
   );

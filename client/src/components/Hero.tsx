@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import heroImage from "@assets/generated_images/AI_neural_network_hero_background_41339854.png";
+import KoFiWidget from "@/components/KoFiWidget";
 
 export default function Hero() {
   return (
@@ -39,21 +40,9 @@ export default function Hero() {
             ⚡ 42% faster launch cycles
           </div>
         </div>
+        {/* Ko-fi widget loader (replaces direct Ko‑fi links) */}
+        <KoFiWidget />
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-          <Button
-            asChild
-            size="lg"
-            className="bg-primary/90 hover:bg-primary backdrop-blur-md border border-primary-border text-lg px-8 py-6 h-auto"
-            data-testid="button-book-strategy"
-          >
-            <a
-              href="https://cal.com/tonyderry/strategy-session"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Book a Strategy Session
-            </a>
-          </Button>
           <Button
             asChild
             size="lg"
@@ -61,13 +50,8 @@ export default function Hero() {
             className="text-lg px-8 py-6 h-auto border-white/60 text-white hover:bg-white/10"
             data-testid="button-kofi-support"
           >
-            <a
-              href="https://ko-fi.com/tonyderry"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="#" onClick={(e) => e.preventDefault()}>
               Support on Ko-fi
-              <ArrowRight className="ml-2 h-5 w-5" />
             </a>
           </Button>
         </div>
