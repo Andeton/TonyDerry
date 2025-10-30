@@ -97,6 +97,9 @@ export default {
           to: { height: "0" },
         },
       },
+      boxShadow: {
+        glow: '0 8px 30px rgba(0,185,254,0.12)',
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

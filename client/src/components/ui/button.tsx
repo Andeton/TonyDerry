@@ -11,7 +11,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground border border-primary-border",
+          "bg-gradient-to-r from-[hsl(var(--primary)/1)] to-[hsl(var(--accent)/1)] text-white border border-transparent shadow-lg",
         destructive:
           "bg-destructive text-destructive-foreground border border-destructive-border",
         outline:
@@ -50,7 +50,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const Comp = asChild ? Slot : "button"
     return (
       <Comp
-        className={cn(buttonVariants({ variant, size, className }))}
+        className={cn(buttonVariants({ variant, size, className }), "transform-gpu will-change-transform")}
         ref={ref}
         {...props}
       />

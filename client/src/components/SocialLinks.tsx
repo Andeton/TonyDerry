@@ -18,7 +18,7 @@ export default function SocialLinks() {
     {
       name: "Ko-fi",
       description: "Support the studio",
-      url: "#",
+      url: "https://ko-fi.com/tonyderry",
       icon: Coffee,
     },
   ];
@@ -32,7 +32,6 @@ export default function SocialLinks() {
             Email, Telegram, LinkedIn, or Ko-fi — pick the channel that fits your next collaboration.
           </p>
         </div>
-        {/* Ko-fi widget loader (replaces direct Ko‑fi links) */}
         <KoFiWidget />
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 flex-wrap">
           {links.map((link) => {
@@ -41,22 +40,8 @@ export default function SocialLinks() {
               <a
                 key={link.name}
                 href={link.url}
-                onClick={(e) => {
-                  if (link.name === "Ko-fi") {
-                    e.preventDefault();
-                    const win = window as any;
-                    // try to draw/open the widget if possible
-                    try {
-                      if (win.kofiWidgetOverlay?.draw) {
-                        win.kofiWidgetOverlay.draw("tonyderry", {});
-                      }
-                    } catch (err) {
-                      // ignore
-                    }
-                  }
-                }}
-                target={link.url === "#" ? undefined : "_blank"}
-                rel={link.url === "#" ? undefined : "noopener noreferrer"}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 text-base md:text-lg hover-elevate px-6 py-4 rounded-md border border-border transition-all duration-200"
                 data-testid={`link-${link.name.toLowerCase()}`}
               >
