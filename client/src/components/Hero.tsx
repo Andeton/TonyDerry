@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
 import heroImage from "@assets/generated_images/AI_neural_network_hero_background_41339854.png";
-import KoFiWidget from "@/components/KoFiWidget";
 
 export default function Hero() {
   return (
@@ -40,21 +39,7 @@ export default function Hero() {
             ⚡ 42% faster launch cycles
           </div>
         </div>
-        {/* Ko-fi widget loader (replaces direct Ko‑fi links) */}
-        <KoFiWidget />
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="text-lg px-8 py-6 h-auto border-white/60 text-white hover:bg-white/10"
-            data-testid="button-kofi-support"
-          >
-            <a href="#" onClick={(e) => e.preventDefault()}>
-              Support on Ko-fi
-            </a>
-          </Button>
-        </div>
+        {/* Buttons removed per request (no CTA / Ko‑fi button in header) */}
       </div>
     </section>
   );
