@@ -1,40 +1,42 @@
-import { ExternalLink } from "lucide-react";
-import { SiKofi, SiLinkedin, SiFacebook, SiInstagram } from "react-icons/si";
+import { ExternalLink, Mail, MessageCircle, Linkedin, Coffee } from "lucide-react";
 
 export default function SocialLinks() {
   const links = [
     {
-      name: "Ko-fi",
-      description: "Support my work",
-      url: "https://ko-fi.com/tonyderry",
-      icon: SiKofi
+      name: "Email",
+      description: "tonyderry@domain.com",
+      url: "mailto:tonyderry@domain.com",
+      icon: Mail,
+    },
+    {
+      name: "Telegram",
+      description: "@TonyDerry",
+      url: "https://t.me/TonyDerry",
+      icon: MessageCircle,
     },
     {
       name: "LinkedIn",
       description: "Connect professionally",
       url: "https://www.linkedin.com/in/ai-gen-td/",
-      icon: SiLinkedin
+      icon: Linkedin,
     },
     {
-      name: "Facebook",
-      description: "Community updates",
-      url: "https://www.facebook.com/TonyDerryPro",
-      icon: SiFacebook
+      name: "Ko-fi",
+      description: "Support the studio",
+      url: "https://ko-fi.com/tonyderry",
+      icon: Coffee,
     },
-    {
-      name: "Instagram",
-      description: "AI visuals & updates",
-      url: "https://www.instagram.com/ai_tony_derry/",
-      icon: SiInstagram
-    }
   ];
 
   return (
     <section className="py-24 md:py-32 px-6 md:px-8" data-testid="section-social">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold mb-12 text-center text-foreground">
-          Connect
-        </h2>
+        <div className="space-y-4 text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground">Get in Touch</h2>
+          <p className="text-base md:text-lg text-muted-foreground">
+            Email, Telegram, LinkedIn, or Ko-fi — pick the channel that fits your next collaboration.
+          </p>
+        </div>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 flex-wrap">
           {links.map((link) => {
             const Icon = link.icon;
