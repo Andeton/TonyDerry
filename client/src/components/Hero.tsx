@@ -14,32 +14,35 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8 text-center space-y-8">
-        <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-sm font-medium uppercase tracking-[0.3em] text-white/80">
-          <Sparkles className="h-4 w-4" />
-          Agentic Workflows · Custom GPTs · Multimodal Automation · Compliance Ready
-        </span>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight">
-          Tony Derry — AI Creator &amp; Orchestrator
-        </h1>
-        <p className="text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
-          I design agentic systems, multimodal pipelines, and compliance-ready automations that monetize your ideas around the clock.
-        </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm md:text-base text-white/80">
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-white/70" />
-            🚀 Automation that monetizes 24/7
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-white/70" />
-            🔒 SOC2 / EU AI Act–ready
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="h-2 w-2 rounded-full bg-white/70" />
-            ⚡ 42% faster launch cycles
+      <div className="relative z-10 max-w-5xl mx-auto px-6 md:px-8 text-center">
+        <div className="relative bg-white/5 dark:bg-black/30 backdrop-blur-md rounded-3xl p-8 md:p-12 space-y-6">
+          <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-5 py-2 text-sm font-medium uppercase tracking-[0.3em] text-white/80">
+            <Sparkles className="h-4 w-4" />
+            Agentic Workflows · Custom GPTs · Multimodal Automation · Compliance Ready
+          </span>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight">
+            <span className="bg-gradient-to-r from-[hsl(var(--primary)/1)] to-[hsl(var(--accent)/1)] bg-clip-text text-transparent">
+              Tony Derry — AI Creator &amp; Orchestrator
+            </span>
+          </h1>
+          <p className="text-lg md:text-xl lg:text-2xl text-[hsl(var(--foreground)/0.9)] leading-relaxed max-w-3xl mx-auto">
+            I design agentic systems, multimodal pipelines, and compliance-ready automations that monetize your ideas around the clock.
+          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm md:text-base text-[hsl(var(--foreground)/0.75)]">
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-white/70" />
+              🚀 Automation that monetizes 24/7
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-white/70" />
+              🔒 SOC2 / EU AI Act–ready
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="h-2 w-2 rounded-full bg-white/70" />
+              ⚡ 42% faster launch cycles
+            </div>
           </div>
         </div>
-        {/* Buttons removed per request (no CTA / Ko‑fi button in header) */}
       </div>
     </section>
   );
