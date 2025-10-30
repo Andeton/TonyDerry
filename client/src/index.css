@@ -76,7 +76,8 @@
   --chart-4: 43 74% 66%;
   --chart-5: 27 87% 67%;
 
-  --font-sans: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  /* Headings first (Sora), then Inter for body */
+  --font-sans: Sora, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-serif: Georgia, serif;
   --font-mono: "JetBrains Mono", Menlo, Monaco, "Courier New", monospace;
   --radius: .5rem; /* 8px */
