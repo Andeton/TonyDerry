@@ -26,18 +26,18 @@ export default function Hero() {
           <p className="text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-3xl mx-auto">
             I design agentic systems, multimodal pipelines, and compliance-ready automations that monetize your ideas around the clock.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-sm md:text-base text-[hsl(var(--foreground)/0.75)]">
-            <div className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-white/70" />
-              🚀 Automation that monetizes 24/7
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-base text-white/85">
+            <div className="flex items-center gap-3">
+              <span className="h-3 w-3 rounded-full bg-gradient-to-r from-[hsl(var(--primary)/1)] to-[hsl(var(--accent)/1)] shadow-sm" />
+              <span className="inline-block">🚀 Automation that monetizes 24/7</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-white/70" />
-              🔒 SOC2 / EU AI Act–ready
+            <div className="flex items-center gap-3">
+              <span className="h-3 w-3 rounded-full bg-gradient-to-r from-[hsl(var(--primary)/1)] to-[hsl(var(--accent)/1)] shadow-sm" />
+              <span className="inline-block">🔒 SOC2 / EU AI Act–ready</span>
             </div>
-            <div className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-white/70" />
-              ⚡ 42% faster launch cycles
+            <div className="flex items-center gap-3">
+              <span className="h-3 w-3 rounded-full bg-gradient-to-r from-[hsl(var(--primary)/1)] to-[hsl(var(--accent)/1)] shadow-sm" />
+              <span className="inline-block">⚡ 42% faster launch cycles</span>
             </div>
           </div>
         </div>
